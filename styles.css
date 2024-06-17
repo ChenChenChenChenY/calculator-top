@@ -1,0 +1,105 @@
+/* ensure the page takes over all the webpage */
+html,body{
+    height:100%;
+    margin:0px;
+    background-color: rgb(242, 242, 242);
+}
+
+.container{
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); */
+}
+
+#body {
+    border: solid white 5px;
+    padding: 8px;
+    margin: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* border radius of the calculator body */
+    border-radius: 24px;
+    /* calculator body background color */
+    background: linear-gradient(125deg, 
+    rgb(255, 197, 197), 
+    rgb(247, 231, 210),
+    rgb(172, 229, 255));
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    display: flex;
+    margin: 8px;
+    border: solid white 2px;
+    /* how much percentage the display takes the space */
+    flex:0.3; 
+    /* border-radius of the display */
+    border-radius: 8px;
+    /* display background color */
+    background: linear-gradient(125deg, 
+    rgb(255, 255, 255), 
+    rgb(241, 241, 241));
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+#right {
+    border: solid red 2px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: right;
+}
+
+.rightDisplay{
+    flex:1;
+}
+
+.displayCell{
+    padding: 8px;
+    position: relative;
+}
+
+#output{
+    border: solid red;
+}
+
+#btGroup{
+    /* margin: 8px; */
+    /* border:solid green; */
+    /* how much percentage the buttons take the space */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+#btGroup2{
+    /* ensure buttons spread all the way vertically */
+    flex: 1;
+    display: flex;
+}
+
+.bt {
+    border: solid white 2px;
+    /* border radius of the buttons */
+    border-radius: 8px;
+    /* ensure bts spread all the way horizontally */
+    flex: 1;
+    padding:8px;
+    margin: 8px;
+    /* buttons background color */
+    background: linear-gradient(125deg, 
+        rgb(255, 255, 255), 
+        rgb(231, 231, 231));
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#btEqual{
+    flex:1;
+    min-width: 50% ;
+    /* background-color: yellow; */
+}
+
+.copyright {
+    text-align: center;
+    color: gray;
+}
