@@ -143,9 +143,11 @@ btEqual.addEventListener("click", () => {
     numberEqualClick++
 })
 
-// btDel.addEventListener("click", ()=>{
-//     currentInput.
-// })
+btDel.addEventListener("click", () => {
+    currentInput = currentInput.slice(0, -1);
+    inputValue = inputValue.slice(0, -1);
+    inputNumber.innerHTML = inputValue
+});
 
 numberButtons.forEach(clickNumber)
 functionButtons.forEach(clickSymbol)
